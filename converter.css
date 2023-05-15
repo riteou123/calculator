@@ -1,6 +1,7 @@
 p {
     text-size:32px;
     text-align: center;
+    text-transform: uppercase;
 }
 body{
     background-color: black;
