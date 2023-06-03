@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset= utf-8" />
+        <meta name ="viewport"
+        content="width=device-width,initial-scale=1.0">
+        <!-- my first project-->
+        <link rel="stylesheet" href="calculator22.css" title="" type="text/css" />
+        <script src="jquery-3.6.3.js" type="text/javascript"></script>
+        <script src="calculator.js" type="text/javascript"></script>
+        
+        <script>
+    $(function(){
+        $(".temp").hide();
+        $(".time").hide();
+        $(".len").hide();
+        $(".con").click(function(){
+            $(".temp").slideToggle(1000);
+           $(".time").slideToggle(1000);
+        $(".len").slideToggle(1000);
+        });
+    });
+        </script>
+        <title> calculator2</title>
+    </head>
+    <body>
+        <nav> 
+    <p class = "con" > Converter</p>
+    <p class = "temp"><a href ="Converter/tempconverter.html">Temperature</a></p>
+    <p class = "time"><a href ="Converter/timeconverter.html">Time</a></p>
+    <p class = "len"><a href ="Converter/lengthconverter.html">Length</a></p>
+            
+        </nav>
+       <form name ="ans">
+        
+        <input type="text"  id="num" name="result">
+    <table border="1">
+        
+        <tr>
+            <td id="squ">X²</td> <td id="root">√x</td><td id="per">%</td> <td id="fac"> ! </td><td id="clear">C</td>
+        </tr>
+        <tr>
+       <td id="cu">X³</td><td id="curoot">3√x</td> <td id="se" >7</td> <td id="ei">8</td> <td id="ni">9</td> 
+        </tr>
+        <tr>
+           <td id="div"> ÷</td><td id="mul">x</td> <td id="fou" >4</td> <td id="fiv" >5</td> <td id="si">6</td> 
+          </tr>
+          <tr>
+        <td id="mi">-</td><td id="pl">+</td><td id="on">1</td> <td id="tw">2</td> <td id="th">3</td> 
+            </tr>
+            <tr>
+              <td id="bro">(</td> <td id="brc">)</td> <td id="do" >.</td> <td id="ze">0</td> <td id="eq">=</td>
+            </tr>
+            
+    </table>
+    </form>
+    </body>
+</html>

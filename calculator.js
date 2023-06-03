@@ -1,6 +1,6 @@
-let name = " CALC 1.0";
+let name = " CALC 1.0"; 
 document.write(name);
-alert("Operation DEL is not working and calculator is in landscape view");
+document.write(Date());
 window.onload = function(){
     let one = document.getElementById("on");
     let two = document.getElementById("tw");
@@ -25,6 +25,8 @@ window.onload = function(){
     let square = document.getElementById("squ");
     let squareroot = document.getElementById("root");
     let percent= document.getElementById("per");
+    let clear = document.getElementById("clear");
+    let fa = document.getElementById("fac");
     one.onclick = function(){
         ans.result.value += 1 ;
     };
@@ -42,8 +44,8 @@ window.onload = function(){
     };
     equal.onclick = function(){
       ans.result.value = eval(ans.result.value);
-      if (eval(ans.result.value) == Infinity ) {
-ans.result.value = "MATH ERROR";
+      if (eval(ans.result.value) === Infinity ) {
+      ans.result.value = "MATH ERROR";
       };
     };
     six.onclick = function(){
@@ -75,6 +77,7 @@ ans.result.value = "MATH ERROR";
     };
     cuberoot.onclick = function (){
         ans.result.value = (eval(ans.result.value) ** (1/3));
+        ans.result.value == integer;
         };
     minus.onclick = function(){
         ans.result.value += "-" ;
@@ -98,6 +101,13 @@ ans.result.value = "MATH ERROR";
         ans.result.value = (eval(ans.result.value) * 0.01);
     };
     clear.onclick = function(){
-        ans.result.value  = " " ;//(eval(ans.result.value) + (-(" "));
+        ans.result.value  = " " ;
+        };
+    fa.onclick = function(){
+         var  fac = 1;
+         for( let x = 1; x <= eval(ans.result.value) ; x++){
+                fac *= x;
+            };
+          ans.result.value = fac;
         };
 };
