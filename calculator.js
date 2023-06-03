@@ -1,6 +1,6 @@
 let name = " CALCv2.1.0"; 
 document.write(name);
-//document.write(Date());
+document.write(Date());
 window.onload = function(){
     let one = document.getElementById("on");
     let two = document.getElementById("tw");
