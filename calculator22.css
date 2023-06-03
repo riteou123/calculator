@@ -58,7 +58,7 @@ input{
 }
 @media(min-width:780px){
 html{
-    font-size: 32px;
+    font-size: 28px;
     position: fixed;
     z-index: 2;
     top: 0px;
