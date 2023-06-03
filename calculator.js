@@ -1,4 +1,4 @@
-let name = " CALCv2.1.0"; 
+let name = " CALCv2.1.0_"; 
 document.write(name);
 document.write(Date());
 window.onload = function(){
